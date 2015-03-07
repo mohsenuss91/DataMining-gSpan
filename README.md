@@ -21,14 +21,14 @@ Based on [gSpan](http://www.cs.ucsb.edu/~xyan/software/gSpan.htm) algorithm in d
 **results**
 	results will be saved in .fp file for example test.data.fp
 
-=======
+
 **example**
 	./gspan -file test.data -support 0.2
 **results**
 	results will be saved in .fp file
 	for example test.data.fp
 
->>>>>>> e72d6c58463c2f5e9008c1d6a05646e2794ae7c4
+
 ###Progress:
 
 1. MPI
