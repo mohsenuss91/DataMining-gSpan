@@ -12,7 +12,7 @@ Based on [gSpan](http://www.cs.ucsb.edu/~xyan/software/gSpan.htm) algorithm in d
 ###Usage:
 
     ./gspan -file [file_name] -support [support: float] &> log
-<<<<<<< HEAD
+
 
 **example**
 
