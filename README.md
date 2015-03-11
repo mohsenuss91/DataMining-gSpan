@@ -1,35 +1,36 @@
 DataMining-gSpan
 ==============
 
-Based on [gSpan](http://www.cs.ucsb.edu/~xyan/software/gSpan.htm) algorithm in data mining
+gSpan algorithm in data mining
 
-###Features:
+**Features:**
 
 1. Support basic sub-structure mining.
 2. Multi-thread. (200% speed-up than gSpan-64 provided by Yan)
 3. Minimized memory consumption.
 
-###Usage:
-
+**Usage:**
+	
     ./gspan -file [file_name] -support [support: float] &> log
 
 
-**example**
+example:
 
-	./gspan -file test.data -support 0.2
+	cd ./src-multithread
+	make
+	./gspan -file graph.data -support 0.1 &> log_03112015
+	
 
-**results**
-	results will be saved in .fp file for example test.data.fp
+**Notice:**
+
+1. You should use `&>` or other redirect operation since I have not included log-writer in this version, but I will update it in a month with other features. 
+
+2. Only `src-multithread` directory contains the most efficient codes, other directories are used for testing. I will remove them at the time I implement all the expected features.
+
+3. The parameter in the `common.h` file, called `THREAD_NUM`, is to control the number of threads. Currently I adopt a very coarse data seperation method. 
 
 
-**example**
-	./gspan -file test.data -support 0.2
-**results**
-	results will be saved in .fp file
-	for example test.data.fp
-
-
-###Progress:
+**Progress:**
 
 1. MPI
 2. Optimize the sequential version.
