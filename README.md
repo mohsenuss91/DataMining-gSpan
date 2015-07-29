@@ -42,3 +42,14 @@ example:
 2. Rearrange the gSpan class code.
 3. Profling.
 4. Multi-thread.
+
+**Data properties**
+
+| Graphs        | Averaged size | Unique labels | Density  |
+| ------------- |:-------------:| -------------:| --------:|
+| 10            | 10            | 1     		|		   |
+| 100  	        | 100           | 1		    	|		   |  						
+| Chemical_340  |               |     		    |		   |			
+| Compound_422  |               |   			|		   |
+| 1000          |               | 1  			|		   |
+|               |               |    			|		   |
